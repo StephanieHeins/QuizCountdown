@@ -21,18 +21,20 @@
     <div id="container">
 
         <!--Start Button-->
-        <div id="startBtn">Start!</div>
+        <div id="start">Start!</div>
 
         <!--Quiz Box-->
         <div id="quiz" style="display : none;">
             <div id="question"><p>Question</p></div>
-            <div class="choice" id="A" onclick="checkAnswer('A')">A</div>
-            <div class="choice" id="B" onclick="checkAnswer('B')">B</div>
-            <div class="choice" id="C" onclick="checkAnswer('C')">C</div>
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')">A</div>
+                <div class="choice" id="B" onclick="checkAnswer('B')">B</div>
+                <div class="choice" id="C" onclick="checkAnswer('C')">C</div>
+            </div>
         </div>
 
         <!--Results Box-->
-        <div id="results" style="display : none;">
+        <div id="score" style="display : none;">
             <p>50%</p>
         </div>
 
