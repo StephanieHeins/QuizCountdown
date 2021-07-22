@@ -14,29 +14,33 @@
     <!--Header-->
     <div class="header">
         <button id="highscorebtn">Highscores</button>
-        <h3>Time: 
-            <span id="timeleft">100</span>
-        </h3>
+        <div id="timer"> </div>
     </div>
 
     <!--Main-->
-    <div class="main">
-        <div id="home">
-            <div id="home1">Coding Quiz Challenge</div>
-            <div id="home2">
-            Try to answer all of the questions
-            before the time runs out!
-            </div>
-            <button id="startbtn">START</button>
+    <div id="container">
+
+        <!--Start Button-->
+        <div id="startBtn">Start!</div>
+
+        <!--Quiz Box-->
+        <div id="quiz" style="display : none;">
+            <div id="question"><p>Question</p></div>
+            <div class="choice" id="A" onclick="checkAnswer('A')">A</div>
+            <div class="choice" id="B" onclick="checkAnswer('B')">B</div>
+            <div class="choice" id="C" onclick="checkAnswer('C')">C</div>
+        </div>
+
+        <!--Results Box-->
+        <div id="results" style="display : none;">
+            <p>50%</p>
+        </div>
+
+        <!--Highscores Box-->
+        <div id="highscores" style="display : none;">
         </div>
 
     </div>
-
-
-
-
-
-
 
     <script src="./Assets/script.js"></script>
 </body>
